@@ -1,0 +1,168 @@
+body {
+    font-family: Coming Soon,Arial, sans-serif;
+    background-color: #ffe6fa;
+    margin: 0;
+    padding: 20px;
+    font-size: 18px; /* bigger base font */
+}
+
+h1 {
+    text-align: center;
+    color: #8e190e;
+    font-size: 2rem;
+}
+
+.question {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.2rem; /* bigger question text */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* bigger radio buttons */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.05rem; /* bigger option text */
+    cursor: pointer;
+}
+
+.hint {
+    display: none;
+    color: #555;
+    font-size: 1rem;
+    margin-top: 6px;
+    background: #fce4ec;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button.hint-btn {
+    background: #f48fb1;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button.hint-btn:hover {
+    background: #ec407a;
+}
+
+#submitBtn {
+    display: block;
+    margin: 0 auto;
+    background: #ff6f61;
+    color: white;
+    padding: 12px 22px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#submitBtn:hover {
+    background: #e64a19;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+.celebrate {
+    animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    70% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .question {
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    #submitBtn {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .question {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    button.hint-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+.correct {
+    background-color: #3fc243 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.incorrect {
+    background-color: #ff2c2c !important;
+    color: white !important;
+    font-weight: bold;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Embryo MCQ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1>Embryology</h1>
+
+<form id="quizForm">
+
+<div class="question">
+  <p>1. The zona reaction prevents:</p>
+  <label><input type="radio" name="q1" value="A">Ovulation</label><br>
+  <label><input type="radio" name="q1" value="B">Polyspermy </label><br>
+  <label><input type="radio" name="q1" value="C">Sperm capacitation</label><br>
+  <label><input type="radio" name="q1" value="D">Cleavage </label><br>
+  <button type="button" class="hint-btn" onclick="showHint(1)">Hint</button>
+  <div id="hint1" class="hint">Think about the reaction that ensures only one sperm fertilizes the egg.</div>
+</div>
+
+<div class="question">
+  <p>2. At the time of ovulation, the oocyte is arrested in:</p>
+  <label><input type="radio" name="q2" value="A">Prophase I</label><br>
+  <label><input type="radio" name="q2" value="B">Metaphase II</label><br>
+  <label><input type="radio" name="q2" value="C">Anaphase I</label><br>
+  <label><input type="radio" name="q2" value="D">Metaphase I</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(2)">Hint</button>
+  <div id="hint2" class="hint">The secondary oocyte pauses just before finishing meiosis II.</div>
+</div>
+
+<div class="question">
+  <p>3. Which germ layer forms the nervous system?</p>
+  <label><input type="radio" name="q3" value="A">Ectoderm </label><br>
+  <label><input type="radio" name="q3" value="B">Mesoderm</label><br>
+  <label><input type="radio" name="q3" value="C">Endoderm</label><br>
+  <label><input type="radio" name="q3" value="D">All of the above</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(3)">Hint</button>
+  <div id="hint3" class="hint">This is the outermost embryonic layer, also forming skin and hair.</div>
+</div>
+
+<div class="question">
+  <p>4. Implantation normally occurs on which day after fertilization?</p>
+  <label><input type="radio" name="q4" value="A">Day 3 </label><br>
+  <label><input type="radio" name="q4" value="B">Day 5</label><br>
+  <label><input type="radio" name="q4" value="C">Day 6–7</label><br>
+  <label><input type="radio" name="q4" value="D">Day 10–12</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(4)">Hint</button>
+  <div id="hint4" class="hint">Happens a few days after the blastocyst reaches the uterus.</div>
+</div>
+
+<div class="question">
+  <p>5. The primitive streak appears during which week of development?</p>
+  <label><input type="radio" name="q5" value="A">1st week </label><br>
+  <label><input type="radio" name="q5" value="B">2nd week</label><br>
+  <label><input type="radio" name="q5" value="C">3rd week </label><br>
+  <label><input type="radio" name="q5" value="D">4th week</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(5)">Hint</button>
+  <div id="hint5" class="hint">This is when gastrulation starts—think “rule of 3” for development</div>
+</div>
+
+<div class="question">
+  <p>6. Which of the following is not derived from the neural crest?</p>
+  <label><input type="radio" name="q6" value="A">Melanocytes</label><br>
+  <label><input type="radio" name="q6" value="B"> Schwann cells</label><br>
+  <label><input type="radio" name="q6" value="C">Adrenal medulla</label><br>
+  <label><input type="radio" name="q6" value="D">Retina</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(6)">Hint</button>
+  <div id="hint6" class="hint"> Neural crest forms peripheral nervous structures, pigment cells, and some endocrine tissue—not the light-sensitive layer of the eye.
+</div>
+</div>
+
+<div class="question">
+  <p>7. Failure of closure of the anterior neuropore results in:</p>
+  <label><input type="radio" name="q7" value="A">Spina bifida</label><br>
+  <label><input type="radio" name="q7" value="B">Anencephaly </label><br>
+  <label><input type="radio" name="q7" value="C">Meningocele</label><br>
+  <label><input type="radio" name="q7" value="D">Hydrocephalus</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(7)">Hint</button>
+  <div id="hint7" class="hint">This defect is at the head end of the neural tube, not the spine.</div>
+</div>
+
+<div class="question">
+  <p>8. Which of the following is the first event after sperm binds to the zona pellucida?</p>
+  <label><input type="radio" name="q8" value="A">Cortical reaction </label><br>
+  <label><input type="radio" name="q8" value="B">Acrosome reaction</label><br>
+  <label><input type="radio" name="q8" value="C">Zona reaction</label><br>
+  <label><input type="radio" name="q8" value="D">Cleavage</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(8)">Hint</button>
+  <div id="hint8" class="hint">Enzymes are released from a special cap on the sperm before it enters.</div>
+</div>
+
+<div class="question">
+  <p>9. During gastrulation, epiblast cells migrating through the primitive node form:</p>
+  <label><input type="radio" name="q9" value="A">Notochord  </label><br>
+  <label><input type="radio" name="q9" value="B">Neural crest</label><br>
+  <label><input type="radio" name="q9" value="C">Somites</label><br>
+  <label><input type="radio" name="q9" value="D"> Neural tube</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(9)">Hint</button>
+  <div id="hint9" class="hint"> This midline rod-like structure induces neural tube formation.</div>
+</div>
+
+<div class="question">
+  <p>10. In early embryonic development, the allantois in humans primarily contributes to:</p>
+  <label><input type="radio" name="q10" value="A">Formation of the yolk sac </label><br>
+  <label><input type="radio" name="q10" value="B">Gas exchange during fetal life</label><br>
+  <label><input type="radio" name="q10" value="C">Development of the urinary bladder </label><br>
+  <label><input type="radio" name="q10" value="D">Formation of the placenta</label><br>
+  <button type="button" class="hint-btn" onclick="showHint(10)">Hint</button>
+  <div id="hint10" class="hint"> In humans, this structure is small and vestigial but becomes part of a duct related to urine drainage6</div>
+</div>
+
+
+
+<button type="button" id="submitBtn" onclick="submitQuiz()">Submit</button>
+</form>
+
+<h2 id="result"></h2>
+
+<script src="script.js"></script>
+</body>
+</html>
